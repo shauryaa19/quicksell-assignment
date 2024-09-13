@@ -11,20 +11,20 @@ const priorityLabels = {
 };
 
 const priorityLogos = {
-  0: "./src/assets/No-priority.svg",
-  1: "./src/assets/Img - Low Priority.svg",
-  2: "./src/assets/Img - Medium Priority.svg",
-  3: "./src/assets/Img - High Priority.svg",
-  4: "./src/assets/SVG - Urgent Priority Colour.svg",
+  0: "/assets/No-priority.svg",
+  1: "/assets/Img - Low Priority.svg",
+  2: "/assets/Img - Medium Priority.svg",
+  3: "/assets/Img - High Priority.svg",
+  4: "/assets/SVG - Urgent Priority colour.svg",
 };
 
 const getGroupLogo = (group, groupingOption) => {
   const logos = {
-    "Todo": "./src/assets/To-do.svg",
-    "In progress": "./src/assets/in-progress.svg",
-    "Backlog": "./src/assets/Backlog.svg",
-    "Done": "./src/assets/Done.svg",
-    "default": "./src/assets/down.svg",
+    "Todo": "/assets/To-do.svg",
+    "In progress": "/assets/in-progress.svg",
+    "Backlog": "/assets/Backlog.svg",
+    "Done": "/assets/Done.svg",
+    "default": "/assets/down.svg",
   };
 
   if (groupingOption === "status") {
@@ -94,12 +94,12 @@ const KanbanBoard = ({ tickets, users, groupingOption, sortOption }) => {
             </div>
             <div className="kanban-header-icons">
               <img
-                src="./src/assets/add.svg"
+                src="/assets/add.svg"
                 alt="add"
                 className="kanban-icon"
               />
               <img
-                src="./src/assets/3 dot menu.svg"
+                src="/assets/3 dot menu.svg"
                 alt="menu"
                 className="kanban-icon"
               />

@@ -7,7 +7,7 @@ const CardComponent = ({ ticket }) => {
       <div className="card-header">
         <div className="card-id">{ticket.id}</div>
         <img 
-          src="./src/assets/man.svg" 
+          src="/assets/man.svg" 
           alt="Profile" 
           className="profile-pic" 
         />
@@ -16,7 +16,7 @@ const CardComponent = ({ ticket }) => {
       <div className="card-footer">
         <span className="icon">
           <img
-            src="./src/assets/SVG - Urgent Priority grey.svg"
+            src="/assets/SVG - Urgent Priority grey.svg"
             alt="urgent"
           />
         </span>

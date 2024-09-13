@@ -12,9 +12,9 @@ const Header = ({ setGroupingOption, setSortOption }) => {
   return (
     <div className="header-container">
       <div className="display-button" onClick={activeDisplay}>
-        <img src="./src/assets/display.svg" alt="display" />
+        <img src="/assets/Display.svg" alt="display" />
         <div className="display-text">Display</div>
-        <img src="./src/assets/down.svg" alt="display" className="display-icon" />
+        <img src="/assets/down.svg" alt="display" className="display-icon" />
       </div>
 
       {isOpen && (
