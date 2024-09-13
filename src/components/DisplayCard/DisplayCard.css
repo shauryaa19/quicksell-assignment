@@ -1,0 +1,36 @@
+.display-card-container {
+    position: absolute;
+    width: 16rem;
+    height: 7rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    background-color: #f7fafc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .display-card-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .display-card-row {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .display-card-label {
+    font-weight: 500;
+    color: #a0aec0;
+  }
+  
+  .display-card-select {
+    border: 1px solid #d1d5db;
+    border-radius: 0.25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  

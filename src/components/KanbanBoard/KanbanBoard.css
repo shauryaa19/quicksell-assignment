@@ -1,0 +1,115 @@
+
+/* Container for the entire board */
+.kanban-board {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    padding: 1.5rem 0.5rem;
+    overflow-x: auto;
+  }
+  
+  /* For larger screens, display in rows */
+  @media (min-width: 768px) {
+    .kanban-board {
+      flex-direction: row;
+    }
+  }
+  
+  /* Individual columns for kanban tickets */
+  .kanban-column {
+    flex: 1;
+    background-color: #f8f9fa;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .kanban-column {
+      margin-bottom: 0;
+    }
+  }
+  
+  /* Group header container */
+  .kanban-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  /* Title and logo section in the header */
+  .kanban-header-title {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  .kanban-logo {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .kanban-logo {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+  
+  /* Title text */
+  .kanban-title {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #2d3748;
+  }
+  
+  @media (min-width: 768px) {
+    .kanban-title {
+      font-size: 1.125rem;
+    }
+  }
+  
+  /* Ticket count badge */
+  .kanban-ticket-count {
+    background-color: #e2e8f0;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px;
+    color: #4a5568;
+  }
+  
+  @media (min-width: 768px) {
+    .kanban-ticket-count {
+      font-size: 0.875rem;
+    }
+  }
+  
+  /* Icons section on the right side of the header */
+  .kanban-header-icons {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  .kanban-icon {
+    width: 1rem;
+    height: 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .kanban-icon {
+      width: 1.25rem;
+      height: 1.25rem;
+    }
+  }
+  
+  /* Kanban task list section */
+  .kanban-task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
